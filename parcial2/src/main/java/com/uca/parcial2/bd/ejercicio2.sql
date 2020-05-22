@@ -22,6 +22,6 @@ INSERT INTO importancia (c_importancia,s_importancia) VALUES (1,'Grandes');
 INSERT INTO importancia (c_importancia,s_importancia) VALUES (2,'Medianos');
 INSERT INTO importancia (c_importancia,s_importancia) VALUES (3,'Otros');
 
-SELECT C.c_contribuyente, I.s_importancia AS c_importancia,C.s_nombre,C.s_apellido,C.s_nit,C.f_fecha_ingreso
+SELECT C.c_contribuyente,C.c_importancia,C.s_nombre,C.s_apellido,C.s_nit,C.f_fecha_ingreso
 FROM contribuyente C INNER JOIN importancia I 
 ON C.c_importancia=I.c_importancia;

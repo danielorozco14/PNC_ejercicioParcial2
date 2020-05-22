@@ -1,0 +1,8 @@
+body{
+	text-align:center;
+	margin:100px;
+	font-size:1.2em;
+}
+form{
+	display: inline-block;
+}
